@@ -119,6 +119,8 @@ class GenerationCog(commands.Cog):
         if not _limiter.check(message.author.id):
             return
 
+        log.info("Mention from %s: %s", message.author, message.content[:80])
+
         # Check for image in the message or the replied-to message
         image_url = _image_url_from_message(message)
         ref_message = None
@@ -129,7 +131,12 @@ class GenerationCog(commands.Cog):
             except discord.NotFound:
                 pass
 
+        # If replying to another message, use that message's text as input
         user_text = sanitize_prompt(message.content)
+        if ref_message and ref_message.content:
+            ref_text = sanitize_prompt(ref_message.content)
+            if ref_text:
+                user_text = ref_text
 
         async with message.channel.typing():
             try:
