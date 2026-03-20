@@ -120,7 +120,10 @@ class GenerationCog(commands.Cog):
                  self.bot.user.id if self.bot.user else None)
         if not self.bot.user:
             return
-        if self.bot.user.id not in [m.id for m in message.mentions]:
+        # Check for direct @user mention OR @role mention for the bot's role
+        mentioned_user = self.bot.user.id in [m.id for m in message.mentions]
+        mentioned_role = any(r.is_bot_managed() for r in message.role_mentions)
+        if not mentioned_user and not mentioned_role:
             return
         if not _limiter.check(message.author.id):
             return
