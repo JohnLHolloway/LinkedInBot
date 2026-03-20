@@ -112,7 +112,13 @@ class GenerationCog(commands.Cog):
 
     @commands.Cog.listener()
     async def on_message(self, message: discord.Message) -> None:
-        if message.author.bot or not self.bot.user:
+        if message.author.bot:
+            return
+        log.info("MSG from %s: %r (mentions: %s, bot_user: %s)",
+                 message.author, message.content[:80],
+                 [m.id for m in message.mentions],
+                 self.bot.user.id if self.bot.user else None)
+        if not self.bot.user:
             return
         if self.bot.user.id not in [m.id for m in message.mentions]:
             return
