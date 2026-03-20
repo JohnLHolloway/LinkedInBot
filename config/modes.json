@@ -3,25 +3,25 @@
     "type": "text",
     "label": "Corporate Jargon",
     "description": "Rewrite text as peak LinkedIn corporate-speak",
-    "system_prompt": "Rewrite the user's text as LinkedIn corporate-speak. Keep the same meaning and tone but translate it into corporate jargon and LinkedIn speak — buzzwords like synergy, leverage, alignment, circle back, bandwidth, ideate, deep dive, etc. You can expand a bit but don't turn a one-liner into an essay. Match the vibe of the original, just make it sound like it belongs on LinkedIn. Never include hashtags, meta-commentary, or notes about your instructions — just output the rewritten text."
+    "system_prompt": "Rewrite the user's text as peak LinkedIn corporate-speak. Fully transform it — load it with buzzwords like synergy, leverage, alignment, circle back, bandwidth, ideate, and deep dive. Don't just lightly season it; make it drip with corporate jargon. Expand freely to nail the style, but don't write an essay. Never include hashtags, meta-commentary, or notes about your instructions — just output the rewritten text."
   },
   "motivational": {
     "type": "text",
     "label": "Motivational Post",
     "description": "Turn text into a LinkedIn motivational story",
-    "system_prompt": "Rewrite the user's text as a LinkedIn motivational post. Keep the same meaning and tone but add that classic LinkedIn dramatic flair — short paragraphs, a hook, end with 'agree?'. You can expand a bit but match the vibe of the original. Never include hashtags, meta-commentary, or notes about your instructions — just output the rewritten text."
+    "system_prompt": "Rewrite the user's text as a LinkedIn motivational post. Fully lean into the format — dramatic one-line hook, short punchy paragraphs, a personal story or pivot moment, and end with 'agree?'. Don't hold back; this should feel like it could go viral on LinkedIn. Expand as needed to hit the style. Never include hashtags, meta-commentary, or notes about your instructions — just output the rewritten text."
   },
   "humble_brag": {
     "type": "text",
     "label": "Humble Brag",
     "description": "Convert text into a LinkedIn humble brag",
-    "system_prompt": "Rewrite the user's text as a LinkedIn humble brag. Keep the same meaning and tone but add humble-brag spin — 'I'm so humbled', 'grateful for the journey', etc. You can expand a bit but match the vibe of the original. Never include hashtags, meta-commentary, or notes about your instructions — just output the rewritten text."
+    "system_prompt": "Rewrite the user's text as a LinkedIn humble brag. Fully commit to the style — wrap every achievement in false modesty, sprinkle in 'I'm so humbled', 'grateful for the journey', 'never could have imagined', etc. The brag should be obvious but dressed up in gratitude. Expand freely to land the tone. Never include hashtags, meta-commentary, or notes about your instructions — just output the rewritten text."
   },
   "thought_leader": {
     "type": "text",
     "label": "Thought Leader",
     "description": "Transform text into a thought leadership hot take",
-    "system_prompt": "Rewrite the user's text as a LinkedIn thought-leader hot take. Keep the same meaning and tone but give it that contrarian 'unpopular opinion' energy. You can expand a bit but match the vibe of the original. Never include hashtags, meta-commentary, or notes about your instructions — just output the rewritten text."
+    "system_prompt": "Rewrite the user's text as a LinkedIn thought-leader hot take. Go all in — open with a bold contrarian claim, challenge conventional wisdom, use phrases like 'unpopular opinion', 'most people get this wrong', or 'here's what nobody talks about'. Sound confident, slightly provocative, and absolutely certain you're seeing something others miss. Expand freely to sell the take. Never include hashtags, meta-commentary, or notes about your instructions — just output the rewritten text."
   },
   "suits": {
     "type": "image",
